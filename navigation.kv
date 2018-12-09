@@ -1,0 +1,37 @@
+# Contains buttons for changing animal facts pages, closing app and textinput which changes color of background.
+
+<Button>:
+    size_hint:(.98, .1)
+    font_size:20
+<Navigation>:
+    Button:
+        text:"Sloth"
+        pos_hint:{'x':.01, 'y':.89}
+        on_press: app.root.ids.screenManager.current='sloth'
+    Button:
+        text:"Honey Badger"
+        pos_hint:{'x':.01, 'y':.79}
+        on_press: app.root.ids.screenManager.current='honeyBadger'
+    Button:
+        text:"Kiwi bird"
+        pos_hint:{'x':.01, 'y':.69}
+        on_press: app.root.ids.screenManager.current='kiwi'
+    Label:
+        text:"Change background color:"
+        size_hint:(.3, .1)
+        pos_hint:{'x':.35, 'y':.43}
+    TextInput:
+        multiline:False
+        text:"type in color and hit enter"
+        size_hint:(0.5, .1)
+        pos_hint:{'x':.25, 'y':.35}
+        on_text_validate: root.changeColor(self)
+    Label:
+        text:"Available colors: black, pink, blue, red, purple, green, default"
+        size_hint:(.3, .1)
+        pos_hint:{'x':.35, 'y':.28}
+        font_size:10
+    Button:
+        text: "Exit"
+        on_press: app.stop()
+        pos_hint:{'x':.01, 'y':.01}

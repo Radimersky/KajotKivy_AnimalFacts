@@ -1,0 +1,70 @@
+# Contains pages with animal facts
+
+#: import  FadeTransition kivy.uix.screenmanager.FadeTransition
+
+<Label>:
+    halign: 'center'
+    valign: 'middle'
+
+<Information>:
+    transition: FadeTransition(clearcolor = (0.41, 0.41, 0.41, 1))
+    SlothFacts:
+    HBadgerFacts:
+    KiwiFacts:
+
+<SlothFacts>:
+    name: "sloth"
+    BoxLayout:
+        orientation:"vertical"
+        Image:
+            source:"./image/Cute_Sloth.jpg"
+        BoxLayout:
+            orientation:"vertical"
+            Label:
+                text:"Algae grow on their fur, which camouflages them green"
+            Label:
+                text:"Sloths diets consist mostly of leaves\n which gives them minimal energy and nutrition"
+            Label:
+                text:"Sloths primary predators include\n eagles, snakes, and jaguars"
+            Label:
+                text:"Contrary to their reputation,\n sloths only sleep about 10 hours a day"
+            Label:
+                text:"Sloths only urinate/defecate once a week"
+            Label:
+                text:"Three-toed sloths can turn their heads almost 360 degrees"
+
+<HBadgerFacts>:
+    name: "honeyBadger"
+    BoxLayout:
+        orientation:"vertical"
+        Image:
+            source:"./image/hbadger.jpg"
+        BoxLayout:
+            orientation:"vertical"
+            Label:
+                text:"A honey badgers skin is too tough for most predators\nteeth or bee stings to penetrate"
+            Label:
+                text:"Honey badgers measure just 60 to 70 in length,\nwith a 20to 30cm tail"
+            Label:
+                text:"The female is called the 'sow', males are known as 'boar'\nand babies are called 'kit'."
+            Label:
+                text:"Honey Badger walks with a jog-trot,\nthat is, a steady trot like a horse"
+            Label:
+                text:"Their thick skin helps protect them from\nthe deadliest of all snakebites"
+
+<KiwiFacts>:
+    name: "kiwi"
+    BoxLayout:
+        orientation:"vertical"
+        Image:
+            source:"./image/kiwi.jpg"
+        BoxLayout:
+            orientation:"vertical"
+            Label:
+                text:"They are the only bird species \nwhich doesnt have wings at all"
+            Label:
+                text:"The kiwi lays the biggest egg in proportion \nto its size of any bird in the world"
+            Label:
+                text:"Kiwis with a capital K are people \nlowercase kiwis are birds"
+            Label:
+                text:"Kiwis have a highly developed sense of smell"
